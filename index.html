@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motorola & SkySafe: Project Air Guardian</title>
+    <title>Motorola & SkySafe: Counter-UAS Sales Playbook</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -20,342 +20,376 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            height: 300px;
+            height: 350px;
             max-height: 400px;
         }
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             .chart-container {
-                height: 350px;
+                height: 300px;
             }
-        }
-        .kpi-number {
-            font-weight: 900;
-            color: #EE9B00;
-        }
-        .flowchart-node {
-            border: 2px solid #0A9396;
-            background-color: #f0fdfa;
-            color: #005F73;
-            padding: 0.75rem 1.25rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            font-weight: 600;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-        }
-        .flowchart-arrow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            color: #94D2BD;
-            margin: 0 0.5rem;
-        }
-        .flowchart-group {
-            border: 2px dashed #94D2BD;
-            padding: 1rem;
-            border-radius: 0.75rem;
         }
     </style>
 </head>
-<body>
-    <div class="container mx-auto p-4 md:p-8">
+<body class="text-gray-800">
 
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-[#005F73]">Project Air Guardian</h1>
-            <p class="text-xl text-[#0A9396] font-semibold mt-2">Motorola & SkySafe Strategic Sales Growth Playbook</p>
-        </header>
+    <header class="bg-[#005f73] text-white p-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold">MOTOROLA & SKYSAFE</h1>
+        <p class="mt-2 text-xl md:text-2xl font-light">A Strategic Sales Playbook for Counter-UAS Dominance</p>
+    </header>
 
-        <section class="text-center bg-white rounded-lg shadow-lg p-8 mb-12">
-            <h2 class="text-2xl font-bold text-[#005F73] mb-2">Unlocking a Critical Market</h2>
-            <p class="text-gray-600 max-w-3xl mx-auto mb-6">The proliferation of unauthorized drones presents a clear and growing threat to public safety and critical infrastructure. The Motorola-SkySafe partnership is uniquely positioned to address this challenge, offering best-in-class detection and mitigation solutions. This playbook outlines five strategic campaigns to capture a significant share of this emerging market.</p>
-            <div class="kpi-number text-6xl md:text-7xl">
-                $2.5B
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="introduction" class="text-center mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <p class="text-lg text-gray-600 mb-4">The unauthorized use of drones poses a growing threat to public safety and critical infrastructure. The Counter-UAS market is experiencing explosive growth to address this vulnerability.</p>
+                <div class="text-[#ca6702] font-extrabold">
+                    <span class="text-6xl md:text-8xl">$10.5B</span>
+                    <span class="block text-2xl md:text-3xl mt-2">Projected Global C-UAS Market by 2028</span>
+                </div>
+                <p class="mt-4 text-lg text-gray-600">This playbook outlines six strategic initiatives to position the Motorola-SkySafe partnership as the market leader across key sectors, capturing significant market share and driving unprecedented growth.</p>
             </div>
-            <p class="text-xl font-semibold text-[#CA6702] mt-2">Total Addressable Market by 2028</p>
         </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            
-            <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-bold text-center text-[#005F73] mb-4">Campaign 1: The North Dakota Project</h3>
-                <p class="text-gray-600 text-center mb-6">Establish a national Center of Excellence with key partners Northern Plains UAS and Grand Sky. This initiative will serve as a live showcase, validating our technology at scale and creating a powerful reference case for statewide deployments.</p>
-                <div class="chart-container mx-auto">
-                    <canvas id="northDakotaChart"></canvas>
+        <section id="market-opportunity" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#005f73]">Target Market Opportunity</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center">Addressable Market Breakdown</h3>
+                    <p class="text-gray-600 mb-4">Our strategy focuses on four high-potential markets, each with distinct needs and significant revenue potential. The Federal Sector and State/Local Governments represent the largest immediate opportunities due to regulatory mandates and public safety charters.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-semibold">Federal Sector:</span> Critical infrastructure protection, border security, and federal facility safeguarding.</li>
+                        <li><span class="font-semibold">State & Local Gov:</span> Law enforcement, emergency response, and protection of public spaces.</li>
+                        <li><span class="font-semibold">Venue Operators:</span> Securing stadiums and major events from aerial threats.</li>
+                        <li><span class="font-semibold">Large Enterprise:</span> Protecting data centers, industrial sites, and corporate campuses.</li>
+                    </ul>
                 </div>
-                <p class="text-center text-gray-500 mt-4">This phased approach ensures robust integration and culminates in a high-impact demonstration day for nationwide stakeholders, solidifying our leadership in large-area UAS security.</p>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="chart-container">
+                        <canvas id="marketDonutChart"></canvas>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-bold text-center text-[#005F73] mb-4">Campaign 2: 2026 FIFA World Cup</h3>
-                <p class="text-gray-600 text-center mb-6">The World Cup represents a monumental, time-sensitive opportunity to protect millions of attendees across 11 host cities. This campaign focuses on securing these high-profile venues, establishing a blueprint for major event security worldwide.</p>
-                <div class="text-center my-6">
-                    <span class="kpi-number text-7xl">11</span>
-                    <p class="text-xl font-semibold text-[#CA6702]">U.S. Host Cities</p>
+        <section id="initiatives">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#005f73]">Six Strategic Growth Initiatives</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#0a9396] mb-3">1. North Dakota Project</h3>
+                    <p class="text-gray-600 flex-grow">Leverage our partnership with Northern Plains UAS and Grand Sky to establish a statewide drone defense network, creating a blueprint for other states to follow.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <p class="text-lg font-semibold">Key Focus: State-level Integration</p>
+                    </div>
                 </div>
-                <div class="chart-container mx-auto h-64 md:h-80">
-                    <canvas id="worldCupChart"></canvas>
+
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#94d2bd] mb-3">2. 2026 FIFA World Cup</h3>
+                    <p class="text-gray-600 flex-grow">Secure contracts with all 11 U.S. host cities to provide comprehensive airspace security, showcasing our capabilities on a global stage.</p>
+                     <div class="mt-4 pt-4 border-t">
+                        <p class="text-lg font-semibold">Key Focus: Marquee Event Security</p>
+                    </div>
                 </div>
-                <p class="text-center text-gray-500 mt-4">Revenue is diversified across hardware, software, and essential on-site support, creating a comprehensive and profitable service model for each venue.</p>
+
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#e9d8a6] mb-3">3. SkySafe Zones Expansion</h3>
+                    <p class="text-gray-600 flex-grow">Target existing customer locations to cross-sell and upsell services, expanding from single-agency deployments to broader, multi-agency "SkySafe Zones".</p>
+                     <div class="mt-4 pt-4 border-t">
+                        <p class="text-lg font-semibold">Key Focus: Customer Base Penetration</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#ee9b00] mb-3">4. Large Enterprise Direct</h3>
+                    <p class="text-gray-600 flex-grow">Identify and engage Fortune 500 companies with critical infrastructure, developing tailored solutions for their specific physical security needs.</p>
+                     <div class="mt-4 pt-4 border-t">
+                        <p class="text-lg font-semibold">Key Focus: New Customer Acquisition</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#ca6702] mb-3">5. DHS Playbook</h3>
+                    <p class="text-gray-600 flex-grow">Develop a comprehensive engagement strategy for the Department of Homeland Security, extending beyond one-time events to long-term security programs like the 2028 Olympics.</p>
+                     <div class="mt-4 pt-4 border-t">
+                        <p class="text-lg font-semibold">Key Focus: Strategic Federal Partnership</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#bb3e03] mb-3">6. Federal Sector Expansion</h3>
+                    <p class="text-gray-600 flex-grow">Pursue opportunities within the Departments of Justice, Defense, and Energy, leveraging initial DHS success to penetrate the wider federal market.</p>
+                     <div class="mt-4 pt-4 border-t">
+                        <p class="text-lg font-semibold">Key Focus: Broad Federal Market Capture</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-bold text-center text-[#005F73] mb-4">Campaign 3: Customer Expansion</h3>
-                    <p class="text-gray-600 text-center mb-8">Leverage existing SkySafe deployments as beachheads for regional expansion. By demonstrating success with a primary agency, we will execute a "Land and Expand" strategy to sell into adjacent entities like county sheriffs, airports, and stadiums.</p>
-                </div>
-                <div>
-                    <div class="flex flex-col items-center justify-center space-y-4">
-                        <div class="flowchart-node">🛡️ Existing Customer (e.g., City Police)</div>
-                        <div class="text-3xl text-[#94D2BD]">⬇️</div>
-                        <div class="flowchart-group w-full p-4">
-                            <p class="text-center font-semibold text-[#0A9396] mb-4">Expansion Targets</p>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div class="flowchart-node">County Sheriff</div>
-                                <div class="flowchart-node">Port Authority</div>
-                                <div class="flowchart-node">Major Airport</div>
-                                <div class="flowchart-node">Event Stadium</div>
+        <section id="initiative-details" class="mt-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#005f73]">Initiative Deep Dive</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="bg-white rounded-lg shadow-md p-6 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-center">FIFA World Cup 2026 Engagement Timeline</h3>
+                    <p class="text-center text-gray-600 mb-6">Our approach is a phased rollout to ensure all 11 host cities are secured well ahead of the event, building momentum and showcasing early successes.</p>
+                    <div class="flex flex-col md:flex-row justify-between text-center space-y-4 md:space-y-0">
+                        <div class="flex-1">
+                            <div class="p-4 bg-blue-100 rounded-lg">
+                                <p class="font-bold text-[#005f73]">Q1 2026</p>
+                                <p>Initial Outreach & Needs Assessment</p>
+                            </div>
+                        </div>
+                        <div class="self-center font-extrabold text-2xl text-gray-300 mx-2">&rarr;</div>
+                        <div class="flex-1">
+                            <div class="p-4 bg-teal-100 rounded-lg">
+                                <p class="font-bold text-[#0a9396]">Q2 2026</p>
+                                <p>On-Site Demos & Technical Scoping</p>
+                            </div>
+                        </div>
+                        <div class="self-center font-extrabold text-2xl text-gray-300 mx-2">&rarr;</div>
+                        <div class="flex-1">
+                            <div class="p-4 bg-green-100 rounded-lg">
+                                <p class="font-bold text-[#94d2bd]">Q3 2026</p>
+                                <p>Contract Negotiation & Procurement</p>
+                            </div>
+                        </div>
+                        <div class="self-center font-extrabold text-2xl text-gray-300 mx-2">&rarr;</div>
+                         <div class="flex-1">
+                            <div class="p-4 bg-yellow-100 rounded-lg">
+                                <p class="font-bold text-[#ee9b00]">Q4 2026</p>
+                                <p>System Deployment & Training</p>
                             </div>
                         </div>
                     </div>
-                    <p class="text-center text-gray-500 mt-6">This model transforms a single sale into a regional security network, dramatically increasing contract value and establishing a wide-area defensive posture.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center">SkySafe Zones: Current vs. Potential Revenue</h3>
+                     <p class="text-gray-600 mb-4">This chart illustrates the significant untapped potential within our existing customer base. By expanding from single deployments to full "SkySafe Zones" covering multiple agencies in a region, we can achieve exponential growth without the cost of new customer acquisition.</p>
+                    <div class="chart-container">
+                        <canvas id="expansionBarChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center">Federal Sector Target Agencies</h3>
+                     <p class="text-gray-600 mb-4">While DHS is our entry point, multiple federal agencies have critical C-UAS needs. This chart prioritizes our expansion efforts based on estimated contract value, with the Department of Defense representing the largest long-term opportunity for securing high-value, multi-year contracts.</p>
+                    <div class="chart-container">
+                        <canvas id="federalBarChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projections" class="mt-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#005f73]">Sales Projections & KPIs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div class="bg-white rounded-lg shadow-md p-6 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-center">Projected Revenue Growth by Initiative (2026-2028)</h3>
+                    <p class="text-gray-600 mb-4">This forecast models the anticipated revenue streams from our key initiatives over the next three years. The Federal and World Cup initiatives are expected to be the primary drivers of initial growth, with Enterprise and Expansion plays providing steady, scalable revenue streams.</p>
+                    <div class="chart-container" style="height: 400px; max-height: 450px;">
+                        <canvas id="revenueLineChart"></canvas>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-bold text-center text-[#005F73] mb-4">Campaign 4: Enterprise Direct</h3>
-                <p class="text-gray-600 text-center mb-6">Target critical infrastructure and large enterprises vulnerable to drone-based threats like espionage, disruption, and physical harm. This campaign focuses on protecting assets, data, and personnel for Fortune 500 clients.</p>
-                <div class="chart-container mx-auto">
-                    <canvas id="enterpriseChart"></canvas>
-                </div>
-                 <p class="text-center text-gray-500 mt-4">The enterprise market is projected to grow significantly, with energy and logistics sectors leading demand. Our solution provides the robust security these high-value industries require.</p>
-            </div>
+    </main>
 
-            <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-bold text-center text-[#005F73] mb-4">Campaign 5: DHS Playbook</h3>
-                 <p class="text-gray-600 text-center mb-6">Establish the Motorola-SkySafe solution as the gold standard for DHS-led National Special Security Events (NSSEs). Moving beyond the World Cup, we will create a repeatable playbook for events like the Super Bowl and the 2028 Los Angeles Olympics.</p>
-                <div class="chart-container mx-auto">
-                    <canvas id="dhsChart"></canvas>
-                </div>
-                <p class="text-center text-gray-500 mt-4">Our capabilities directly align with core DHS mandates, positioning us as the ideal long-term partner for securing the nation's most critical events and locations against aerial threats.</p>
-            </div>
-        </div>
+    <footer class="bg-[#005f73] text-white text-center p-6 mt-12">
+        <p>Motorola & SkySafe Confidential | Strategic Sales Playbook</p>
+    </footer>
 
-        <footer class="text-center mt-12 text-gray-500">
-            <p>&copy; 2025 Motorola Solutions & SkySafe Technologies. All Rights Reserved.</p>
-        </footer>
-    </div>
-
-<script>
-    function wrapLabel(label, maxLength) {
-        if (label.length <= maxLength) {
-            return label;
-        }
-        const words = label.split(' ');
-        const lines = [];
-        let currentLine = '';
-        for (const word of words) {
-            if ((currentLine + word).length > maxLength) {
+    <script>
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) {
                 lines.push(currentLine.trim());
-                currentLine = '';
             }
-            currentLine += word + ' ';
-        }
-        lines.push(currentLine.trim());
-        return lines;
-    }
-
-    const tooltipTitleCallback = (tooltipItems) => {
-        const item = tooltipItems[0];
-        let label = item.chart.data.labels[item.dataIndex];
-        if (Array.isArray(label)) {
-            return label.join(' ');
-        }
-        return label;
-    };
-    
-    const brilliantBlues = {
-      darkTeal: '#005F73',
-      teal: '#0A9396',
-      lightTeal: '#94D2BD',
-      sand: '#E9D8A6',
-      gold: '#EE9B00',
-      orange: '#CA6702',
-      darkOrange: '#BB3E03',
-      red: '#AE2012'
-    };
-
-    const defaultChartOptions = {
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                position: 'bottom',
-                labels: {
-                    color: '#374151',
-                    font: {
-                        family: "'Inter', sans-serif"
-                    }
-                }
-            },
-            tooltip: {
-                callbacks: {
-                    title: tooltipTitleCallback
-                }
+            return lines;
+        };
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
             }
-        },
-        scales: {
-            y: {
-                beginAtZero: true,
-                grid: {
-                    color: '#e5e7eb'
-                },
-                ticks: {
-                    color: '#4b5563',
-                    font: {
-                        family: "'Inter', sans-serif"
-                    }
-                }
-            },
-            x: {
-                grid: {
-                    display: false
-                },
-                ticks: {
-                    color: '#4b5563',
-                    font: {
-                        family: "'Inter', sans-serif"
-                    }
-                }
-            }
-        }
-    };
+        };
 
-    const ndLabels = ['Phase 1: System Integration & Testing', 'Phase 2: BVLOS Flight Validation', 'Phase 3: Multi-Agency Stress Test', 'Phase 4: Partner Demonstration Day'];
-    const ndCtx = document.getElementById('northDakotaChart').getContext('2d');
-    new Chart(ndCtx, {
-        type: 'bar',
-        data: {
-            labels: ndLabels.map(l => wrapLabel(l, 20)),
-            datasets: [{
-                label: 'Project Timeline (Quarters)',
-                data: [2, 3, 2, 1],
-                backgroundColor: brilliantBlues.teal,
-                borderColor: brilliantBlues.darkTeal,
-                borderWidth: 1
-            }]
-        },
-        options: {
-            ...defaultChartOptions,
-            indexAxis: 'y',
-             scales: {
-                y: { ...defaultChartOptions.scales.y, grid: { display: false } },
-                x: { ...defaultChartOptions.scales.x, grid: { color: '#e5e7eb' } }
-            }
-        }
-    });
+        const chartColors = {
+            blue1: '#005f73',
+            blue2: '#0a9396',
+            green1: '#94d2bd',
+            yellow1: '#e9d8a6',
+            orange1: '#ee9b00',
+            orange2: '#ca6702',
+            red1: '#bb3e03',
+        };
 
-    const wcCtx = document.getElementById('worldCupChart').getContext('2d');
-    new Chart(wcCtx, {
-        type: 'doughnut',
-        data: {
-            labels: ['Hardware Sales', 'Software & Licensing', 'Event Support Services'],
-            datasets: [{
-                label: 'Revenue Mix',
-                data: [45, 35, 20],
-                backgroundColor: [brilliantBlues.darkTeal, brilliantBlues.lightTeal, brilliantBlues.gold],
-                hoverOffset: 4
-            }]
-        },
-        options: {
-             maintainAspectRatio: false,
-             plugins: {
-                legend: defaultChartOptions.plugins.legend,
-                tooltip: defaultChartOptions.plugins.tooltip
-             }
-        }
-    });
-
-    const enterpriseLabels = ['2025', '2026', '2027', '2028'];
-    const entCtx = document.getElementById('enterpriseChart').getContext('2d');
-    new Chart(entCtx, {
-        type: 'bar',
-        data: {
-            labels: enterpriseLabels,
-            datasets: [
-                {
-                    label: 'Energy & Utilities',
-                    data: [120, 150, 190, 240],
-                    backgroundColor: brilliantBlues.darkTeal,
-                },
-                {
-                    label: 'Logistics & Transport',
-                    data: [80, 110, 145, 195],
-                    backgroundColor: brilliantBlues.teal,
-                },
-                {
-                    label: 'Tech & Data Centers',
-                    data: [60, 85, 115, 150],
-                    backgroundColor: brilliantBlues.lightTeal,
-                },
-                 {
-                    label: 'Other',
-                    data: [40, 55, 70, 90],
-                    backgroundColor: brilliantBlues.sand,
-                }
-            ]
-        },
-        options: {
-            ...defaultChartOptions,
-            scales: {
-                 x: { ...defaultChartOptions.scales.x, stacked: true },
-                 y: { ...defaultChartOptions.scales.y, stacked: true, ticks: { callback: value => `$${value}M` } }
-            }
-        }
-    });
-
-    const dhsLabels = ['Scalability', 'Federal Compliance', 'Rapid Deployment', 'Interoperability', 'Actionable Reporting'];
-    const dhsCtx = document.getElementById('dhsChart').getContext('2d');
-    new Chart(dhsCtx, {
-        type: 'radar',
-        data: {
-            labels: dhsLabels,
-            datasets: [{
-                label: 'Motorola-SkySafe Alignment Score',
-                data: [9, 10, 8, 9, 10],
-                fill: true,
-                backgroundColor: 'rgba(10, 147, 150, 0.2)',
-                borderColor: brilliantBlues.teal,
-                pointBackgroundColor: brilliantBlues.teal,
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: brilliantBlues.teal
-            }]
-        },
-        options: {
+        const defaultChartOptions = {
+            responsive: true,
             maintainAspectRatio: false,
             plugins: {
-                legend: defaultChartOptions.plugins.legend,
-                tooltip: defaultChartOptions.plugins.tooltip
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#374151',
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                     bodyFont: {
+                        family: "'Inter', sans-serif"
+                    },
+                    titleFont: {
+                        family: "'Inter', sans-serif"
+                    }
+                }
             },
             scales: {
-                r: {
-                    angleLines: { color: '#e5e7eb' },
-                    grid: { color: '#e5e7eb' },
-                    pointLabels: { 
-                        color: '#374151',
-                        font: { size: 12, family: "'Inter', sans-serif" }
-                    },
+                y: {
                     ticks: {
-                        backdropColor: 'transparent',
-                        color: '#4b5563'
+                        color: '#4b5563',
+                        font: { family: "'Inter', sans-serif" }
                     },
-                    min: 0,
-                    max: 10
+                    grid: {
+                        color: '#e5e7eb'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#4b5563',
+                        font: { family: "'Inter', sans-serif" }
+                    },
+                    grid: {
+                        color: '#e5e7eb'
+                    }
                 }
             }
-        }
-    });
-</script>
+        };
 
+        const marketDonutCtx = document.getElementById('marketDonutChart').getContext('2d');
+        new Chart(marketDonutCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Federal Sector', ['State & Local', 'Governments'], 'Venue Operators', 'Large Enterprise'],
+                datasets: [{
+                    label: 'Market Share',
+                    data: [40, 30, 15, 15],
+                    backgroundColor: [chartColors.blue1, chartColors.blue2, chartColors.orange1, chartColors.orange2],
+                    borderColor: '#ffffff',
+                    borderWidth: 2
+                }]
+            },
+            options: { ...defaultChartOptions, cutout: '60%' }
+        });
+
+        const expansionBarCtx = document.getElementById('expansionBarChart').getContext('2d');
+        new Chart(expansionBarCtx, {
+            type: 'bar',
+            data: {
+                labels: ['California Region', 'Texas Region', 'Florida Region', 'New York Region'],
+                datasets: [
+                    {
+                        label: 'Current Revenue ($M)',
+                        data: [1.2, 0.8, 1.5, 0.9],
+                        backgroundColor: chartColors.blue2,
+                    },
+                    {
+                        label: 'Expansion Potential ($M)',
+                        data: [4.5, 3.2, 5.0, 4.1],
+                        backgroundColor: chartColors.green1,
+                    }
+                ]
+            },
+            options: {
+                ...defaultChartOptions,
+                scales: {
+                    x: { stacked: true, ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif" } }, grid: { color: '#e5e7eb' } },
+                    y: { stacked: true, ticks: { color: '#4b5563', font: { family: "'Inter', sans-serif" } }, grid: { color: '#e5e7eb' } }
+                }
+            }
+        });
+
+        const federalBarCtx = document.getElementById('federalBarChart').getContext('2d');
+        const federalLabels = ['Dept. of Homeland Security', 'Dept. of Justice', 'Dept. of Energy', 'Dept. of Defense'];
+        new Chart(federalBarCtx, {
+            type: 'bar',
+            data: {
+                labels: federalLabels.map(wrapLabel),
+                datasets: [{
+                    label: 'Est. Contract Value ($M)',
+                    data: [85, 60, 45, 150],
+                    backgroundColor: [chartColors.orange1, chartColors.orange2, chartColors.red1, chartColors.blue1],
+                    borderColor: '#ffffff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                 indexAxis: 'y',
+                 plugins: { ...defaultChartOptions.plugins, legend: { display: false } }
+            }
+        });
+        
+        const revenueLineCtx = document.getElementById('revenueLineChart').getContext('2d');
+        new Chart(revenueLineCtx, {
+            type: 'line',
+            data: {
+                labels: ['Q1 2026', 'Q2 2026', 'Q3 2026', 'Q4 2026', 'Q1 2027', 'Q2 2027', 'Q3 2027', 'Q4 2027', '2028'],
+                datasets: [
+                    {
+                        label: 'Federal Sector',
+                        data: [5, 10, 15, 25, 35, 48, 60, 75, 100],
+                        borderColor: chartColors.blue1,
+                        backgroundColor: 'rgba(0, 95, 115, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    },
+                    {
+                        label: 'World Cup & Venues',
+                        data: [2, 8, 12, 18, 22, 25, 28, 30, 35],
+                        borderColor: chartColors.green1,
+                        backgroundColor: 'rgba(148, 210, 189, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Enterprise & Expansion',
+                        data: [1, 3, 5, 8, 12, 18, 25, 32, 50],
+                        borderColor: chartColors.orange1,
+                        backgroundColor: 'rgba(238, 155, 0, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: defaultChartOptions
+        });
+
+    </script>
 </body>
 </html>
-
